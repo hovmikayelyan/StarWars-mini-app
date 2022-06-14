@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15806A812858D9F700BC5AFC /* ShowError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15806A802858D9F700BC5AFC /* ShowError.swift */; };
+		15806A832858DA5400BC5AFC /* PresentDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15806A822858DA5400BC5AFC /* PresentDetail.swift */; };
 		15C3F6B22858CFFF0084133F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3F6B12858CFFF0084133F /* AppDelegate.swift */; };
-		15C3F6B42858CFFF0084133F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3F6B32858CFFF0084133F /* ViewController.swift */; };
+		15C3F6B42858CFFF0084133F /* CharactersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3F6B32858CFFF0084133F /* CharactersVC.swift */; };
 		15C3F6B72858CFFF0084133F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15C3F6B52858CFFF0084133F /* Main.storyboard */; };
 		15C3F6B92858D0030084133F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15C3F6B82858D0030084133F /* Assets.xcassets */; };
 		15C3F6BC2858D0030084133F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15C3F6BA2858D0030084133F /* LaunchScreen.storyboard */; };
+		15C3F6C82858D61F0084133F /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3F6C72858D61F0084133F /* Character.swift */; };
+		15C3F6CA2858D73E0084133F /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3F6C92858D73E0084133F /* Planet.swift */; };
+		15C3F6CC2858D7640084133F /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3F6CB2858D7640084133F /* APIError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15806A802858D9F700BC5AFC /* ShowError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowError.swift; sourceTree = "<group>"; };
+		15806A822858DA5400BC5AFC /* PresentDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentDetail.swift; sourceTree = "<group>"; };
 		15C3F6AE2858CFFF0084133F /* StarWars-mini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StarWars-mini.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15C3F6B12858CFFF0084133F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		15C3F6B32858CFFF0084133F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		15C3F6B32858CFFF0084133F /* CharactersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersVC.swift; sourceTree = "<group>"; };
 		15C3F6B62858CFFF0084133F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		15C3F6B82858D0030084133F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15C3F6BB2858D0030084133F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15C3F6BD2858D0040084133F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15C3F6C72858D61F0084133F /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		15C3F6C92858D73E0084133F /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		15C3F6CB2858D7640084133F /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15806A7F2858D97500BC5AFC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				15806A802858D9F700BC5AFC /* ShowError.swift */,
+				15806A822858DA5400BC5AFC /* PresentDetail.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		15C3F6A52858CFFF0084133F = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +73,50 @@
 		15C3F6B02858CFFF0084133F /* StarWars-mini */ = {
 			isa = PBXGroup;
 			children = (
+				15806A7F2858D97500BC5AFC /* Extensions */,
+				15C3F6C62858D2B10084133F /* Services */,
+				15C3F6C52858D2A60084133F /* Controller */,
+				15C3F6C42858D29E0084133F /* Model */,
+				15C3F6C32858D2780084133F /* View */,
 				15C3F6B12858CFFF0084133F /* AppDelegate.swift */,
-				15C3F6B32858CFFF0084133F /* ViewController.swift */,
 				15C3F6B52858CFFF0084133F /* Main.storyboard */,
 				15C3F6B82858D0030084133F /* Assets.xcassets */,
 				15C3F6BA2858D0030084133F /* LaunchScreen.storyboard */,
 				15C3F6BD2858D0040084133F /* Info.plist */,
 			);
 			path = "StarWars-mini";
+			sourceTree = "<group>";
+		};
+		15C3F6C32858D2780084133F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		15C3F6C42858D29E0084133F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				15C3F6C72858D61F0084133F /* Character.swift */,
+				15C3F6C92858D73E0084133F /* Planet.swift */,
+				15C3F6CB2858D7640084133F /* APIError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		15C3F6C52858D2A60084133F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				15C3F6B32858CFFF0084133F /* CharactersVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		15C3F6C62858D2B10084133F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +190,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15C3F6B42858CFFF0084133F /* ViewController.swift in Sources */,
+				15C3F6C82858D61F0084133F /* Character.swift in Sources */,
+				15806A812858D9F700BC5AFC /* ShowError.swift in Sources */,
+				15C3F6B42858CFFF0084133F /* CharactersVC.swift in Sources */,
+				15806A832858DA5400BC5AFC /* PresentDetail.swift in Sources */,
 				15C3F6B22858CFFF0084133F /* AppDelegate.swift in Sources */,
+				15C3F6CC2858D7640084133F /* APIError.swift in Sources */,
+				15C3F6CA2858D73E0084133F /* Planet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
