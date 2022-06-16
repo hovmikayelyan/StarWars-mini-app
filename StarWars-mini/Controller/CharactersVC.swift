@@ -26,8 +26,8 @@ class CharactersVC: UIViewController {
         
         activityIndicator.startAnimating()
         
-        setupSearchBar()
         getAllCharacters()
+        setupSearchBar()
     }
 
     func getAllCharacters() {
@@ -94,7 +94,8 @@ extension CharactersVC: UITableViewDelegate, UITableViewDataSource {
             navigationItem.backBarButtonItem = barBtn
             
             assert(sender as? Character != nil)
-            detailedCharacterVC.setupCharacter(character: sender as! Character)
+        
+            detailedCharacterVC.initCharacter(character: sender as! Character)
         }
     }
     

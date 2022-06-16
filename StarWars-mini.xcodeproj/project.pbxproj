@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1551F907285AFD9000FD14E9 /* DetailedPlanetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1551F906285AFD9000FD14E9 /* DetailedPlanetVC.swift */; };
 		15806A812858D9F700BC5AFC /* ShowError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15806A802858D9F700BC5AFC /* ShowError.swift */; };
 		15806A832858DA5400BC5AFC /* PresentDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15806A822858DA5400BC5AFC /* PresentDetail.swift */; };
 		158D6DC928599B9000C85951 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158D6DC828599B9000C85951 /* NetworkService.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1551F906285AFD9000FD14E9 /* DetailedPlanetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedPlanetVC.swift; sourceTree = "<group>"; };
 		15806A802858D9F700BC5AFC /* ShowError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowError.swift; sourceTree = "<group>"; };
 		15806A822858DA5400BC5AFC /* PresentDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentDetail.swift; sourceTree = "<group>"; };
 		158D6DC828599B9000C85951 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			children = (
 				15C3F6B32858CFFF0084133F /* CharactersVC.swift */,
 				15A196C42859B58200DD30FC /* DetailedCharacterVC.swift */,
+				1551F906285AFD9000FD14E9 /* DetailedPlanetVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15C3F6C82858D61F0084133F /* Character.swift in Sources */,
+				1551F907285AFD9000FD14E9 /* DetailedPlanetVC.swift in Sources */,
 				15806A812858D9F700BC5AFC /* ShowError.swift in Sources */,
 				15A196C52859B58200DD30FC /* DetailedCharacterVC.swift in Sources */,
 				158D6DC928599B9000C85951 /* NetworkService.swift in Sources */,
